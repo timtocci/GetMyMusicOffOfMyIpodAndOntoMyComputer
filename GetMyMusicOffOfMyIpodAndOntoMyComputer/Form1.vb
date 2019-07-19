@@ -5,6 +5,7 @@ Imports System.Security
 
 Public Class frmMain
     Dim debug As Boolean = False
+    Dim running As Boolean = False
     Dim mouseoffset As Size = Nothing
     Dim activePanel As Panel = pWelcome
     Dim summs As List(Of SongSummary) = Nothing
@@ -173,7 +174,11 @@ Public Class frmMain
     End Sub
 
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
-        Me.Close()
+        If running Then
+            Me.WindowState = FormWindowState.Minimized
+        Else
+            Me.Close()
+        End If
     End Sub
 
     Private Sub BtnMin_Click(sender As Object, e As EventArgs) Handles btnMin.Click
@@ -215,6 +220,7 @@ Public Class frmMain
                 TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Error)
             Else
                 ' lets get it on
+                running = True
                 activePanel.Hide()
                 pProcessing.Show()
                 activePanel = pProcessing
@@ -222,6 +228,7 @@ Public Class frmMain
                 activePanel.Hide()
                 pAbout.Show()
                 activePanel = pAbout
+                running = False
             End If
         Else
             activePanel.Hide()
@@ -279,5 +286,30 @@ Public Class frmMain
 
     Private Sub BtnMin_MouseLeave(sender As Object, e As EventArgs) Handles btnMin.MouseLeave
         btnMin.ForeColor = Color.FromKnownColor(KnownColor.ControlText)
+    End Sub
+
+    Private Sub Mypic_Click(sender As Object, e As EventArgs) Handles mypic.Click
+        Dim webAddress As String = "https://timothytocci.com/"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub Twitterpic_Click(sender As Object, e As EventArgs) Handles twitterpic.Click
+        Dim webAddress As String = "https://twitter.com/timothytocci"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub Githubpic_Click(sender As Object, e As EventArgs) Handles githubpic.Click
+        Dim webAddress As String = "https://github.com/timtocci/GetMyMusicOffOfMyIpodAndOntoMyComputer"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub Facebookpic_Click(sender As Object, e As EventArgs) Handles facebookpic.Click
+        Dim webAddress As String = "https://www.facebook.com/timothy.tocci"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub Skypepic_Click(sender As Object, e As EventArgs) Handles skypepic.Click
+        Dim webAddress As String = "https://join.skype.com/invite/vzI2WnBSiDqF"
+        Process.Start(webAddress)
     End Sub
 End Class

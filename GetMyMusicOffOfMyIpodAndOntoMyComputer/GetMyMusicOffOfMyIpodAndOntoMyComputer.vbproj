@@ -144,8 +144,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FindUs-FB-RGB-BRC-Site-500.png" />
+    <Content Include="GitHub-Mark-120px-plus.png" />
     <Content Include="ipod_icon.ico" />
     <Content Include="ipod_screen.bmp" />
+    <Content Include="skype-icon.png" />
+    <Content Include="ttocci_400x400.png" />
+    <Content Include="Twitter_Social_Icon_Square_Color.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Shell32">

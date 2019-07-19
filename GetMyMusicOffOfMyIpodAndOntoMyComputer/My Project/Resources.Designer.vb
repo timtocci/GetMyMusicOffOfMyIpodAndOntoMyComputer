@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property FindUs_FB_RGB_BRC_Site_500() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("FindUs-FB-RGB-BRC-Site-500", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property GitHub_Mark_120px_plus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("GitHub-Mark-120px-plus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property ipod_icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ipod_icon", resourceCulture)
@@ -76,6 +96,36 @@ Namespace My.Resources
         Friend ReadOnly Property ipod_screen() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ipod_screen", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property skype_icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("skype-icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ttocci_400x400() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ttocci_400x400", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Twitter_Social_Icon_Square_Color() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Twitter_Social_Icon_Square_Color", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

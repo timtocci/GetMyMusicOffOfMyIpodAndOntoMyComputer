@@ -35,6 +35,13 @@ Partial Class frmMain
         Me.lblWel = New System.Windows.Forms.Label()
         Me.picIpod = New System.Windows.Forms.PictureBox()
         Me.pAbout = New System.Windows.Forms.Panel()
+        Me.skypepic = New System.Windows.Forms.PictureBox()
+        Me.facebookpic = New System.Windows.Forms.PictureBox()
+        Me.githubpic = New System.Windows.Forms.PictureBox()
+        Me.twitterpic = New System.Windows.Forms.PictureBox()
+        Me.mypic = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pProcessing = New System.Windows.Forms.Panel()
         Me.progress = New System.Windows.Forms.ProgressBar()
         Me.lblCompFPath = New System.Windows.Forms.Label()
@@ -53,6 +60,13 @@ Partial Class frmMain
         Me.pNotConn.SuspendLayout()
         Me.pWelcome.SuspendLayout()
         CType(Me.picIpod, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pAbout.SuspendLayout()
+        CType(Me.skypepic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.facebookpic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.githubpic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.twitterpic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mypic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pProcessing.SuspendLayout()
         Me.pNoSpace.SuspendLayout()
         Me.pEmptyIpod.SuspendLayout()
@@ -187,10 +201,91 @@ Partial Class frmMain
         'pAbout
         '
         Me.pAbout.BackColor = System.Drawing.Color.GhostWhite
+        Me.pAbout.Controls.Add(Me.skypepic)
+        Me.pAbout.Controls.Add(Me.facebookpic)
+        Me.pAbout.Controls.Add(Me.githubpic)
+        Me.pAbout.Controls.Add(Me.twitterpic)
+        Me.pAbout.Controls.Add(Me.mypic)
+        Me.pAbout.Controls.Add(Me.Label8)
+        Me.pAbout.Controls.Add(Me.PictureBox1)
         Me.pAbout.Location = New System.Drawing.Point(578, 53)
         Me.pAbout.Name = "pAbout"
         Me.pAbout.Size = New System.Drawing.Size(431, 320)
         Me.pAbout.TabIndex = 4
+        '
+        'skypepic
+        '
+        Me.skypepic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.skypepic.Image = Global.GetMyMusicOffOfMyIpodAndOntoMyComputer.My.Resources.Resources.skype_icon
+        Me.skypepic.Location = New System.Drawing.Point(105, 239)
+        Me.skypepic.Name = "skypepic"
+        Me.skypepic.Size = New System.Drawing.Size(55, 54)
+        Me.skypepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.skypepic.TabIndex = 7
+        Me.skypepic.TabStop = False
+        '
+        'facebookpic
+        '
+        Me.facebookpic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.facebookpic.Image = Global.GetMyMusicOffOfMyIpodAndOntoMyComputer.My.Resources.Resources.FindUs_FB_RGB_BRC_Site_500
+        Me.facebookpic.Location = New System.Drawing.Point(199, 239)
+        Me.facebookpic.Name = "facebookpic"
+        Me.facebookpic.Size = New System.Drawing.Size(122, 54)
+        Me.facebookpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.facebookpic.TabIndex = 6
+        Me.facebookpic.TabStop = False
+        '
+        'githubpic
+        '
+        Me.githubpic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.githubpic.Image = Global.GetMyMusicOffOfMyIpodAndOntoMyComputer.My.Resources.Resources.GitHub_Mark_120px_plus
+        Me.githubpic.Location = New System.Drawing.Point(11, 239)
+        Me.githubpic.Name = "githubpic"
+        Me.githubpic.Size = New System.Drawing.Size(55, 54)
+        Me.githubpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.githubpic.TabIndex = 5
+        Me.githubpic.TabStop = False
+        '
+        'twitterpic
+        '
+        Me.twitterpic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.twitterpic.Image = Global.GetMyMusicOffOfMyIpodAndOntoMyComputer.My.Resources.Resources.Twitter_Social_Icon_Square_Color
+        Me.twitterpic.Location = New System.Drawing.Point(360, 239)
+        Me.twitterpic.Name = "twitterpic"
+        Me.twitterpic.Size = New System.Drawing.Size(59, 54)
+        Me.twitterpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.twitterpic.TabIndex = 4
+        Me.twitterpic.TabStop = False
+        '
+        'mypic
+        '
+        Me.mypic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.mypic.Image = Global.GetMyMusicOffOfMyIpodAndOntoMyComputer.My.Resources.Resources.ttocci_400x400
+        Me.mypic.Location = New System.Drawing.Point(141, 67)
+        Me.mypic.Name = "mypic"
+        Me.mypic.Size = New System.Drawing.Size(149, 149)
+        Me.mypic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.mypic.TabIndex = 3
+        Me.mypic.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.Font = New System.Drawing.Font("Myriad Pro", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(44, 3)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(380, 64)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "Application Complete! Check the ""iPod_Music"" folder on your Desktop." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.GetMyMusicOffOfMyIpodAndOntoMyComputer.My.Resources.Resources.ipod_icon
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 46)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'pProcessing
         '
@@ -369,6 +464,13 @@ Partial Class frmMain
         Me.pNotConn.ResumeLayout(False)
         Me.pWelcome.ResumeLayout(False)
         CType(Me.picIpod, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pAbout.ResumeLayout(False)
+        CType(Me.skypepic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.facebookpic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.githubpic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.twitterpic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mypic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pProcessing.ResumeLayout(False)
         Me.pProcessing.PerformLayout()
         Me.pNoSpace.ResumeLayout(False)
@@ -406,4 +508,11 @@ Partial Class frmMain
     Friend WithEvents lblWait As Label
     Friend WithEvents pEmptyIpod As Panel
     Friend WithEvents Label5 As Label
+    Friend WithEvents mypic As PictureBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents facebookpic As PictureBox
+    Friend WithEvents githubpic As PictureBox
+    Friend WithEvents twitterpic As PictureBox
+    Friend WithEvents skypepic As PictureBox
 End Class
